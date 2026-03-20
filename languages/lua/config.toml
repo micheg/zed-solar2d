@@ -1,0 +1,7 @@
+name = "Lua"
+grammar = "lua"
+extensions = ["lua"]
+
+[language_server.lua-language-server]
+# Qui indichiamo al server di includere la tua cartella API
+settings = { "Lua.workspace.library" = ["languages/lua/api"] }

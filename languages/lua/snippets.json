@@ -1,0 +1,18 @@
+{
+  "New Rect": {
+    "prefix": "drect",
+    "body": "local ${1:myRect} = display.newRect(${2:display.contentCenterX}, ${3:display.contentCenterY}, ${4:100}, ${5:100})\n${1:myRect}:setFillColor(${6:1, 1, 1})\n$0"
+  },
+  "New Circle": {
+    "prefix": "dcirc",
+    "body": "local ${1:myCircle} = display.newCircle(${2:display.contentCenterX}, ${3:display.contentCenterY}, ${4:50})\n$0"
+  },
+  "EnterFrame Listener": {
+    "prefix": "eflistener",
+    "body": "local function onEnterFrame(event)\n\t$0\nend\nRuntime:addEventListener(\"enterFrame\", onEnterFrame)"
+  },
+  "Transition To": {
+    "prefix": "tto",
+    "body": "transition.to(${1:object}, { time=${2:1000}, x=${3:100}, y=${4:100}, alpha=${5:0}, onComplete=${6:nil} })"
+  }
+}
